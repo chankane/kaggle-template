@@ -5,17 +5,18 @@ import pandas as pd
 # 1
 
 
-train = pd.read_csv("./data/train.csv")
-test = pd.read_csv("./data/test.csv")
+train = pd.read_csv('./data/train.csv')
+test = pd.read_csv('./data/test.csv')
 df = pd.concat([train, test])
 
-print('Input col:')
-print(df.columns)
+print('\n')
+print('In cols:')
+print(df.columns.values)
+print('\n')
 
 # 2
 
-print('Output col:')
-print(df.columns)
-print("\n")
+print('Out cols:')
+print(df.columns.values)
 
-df.to_csv("./data/col-out.csv", index=False)
+df.to_csv('./data/col-out.csv', index=False)
