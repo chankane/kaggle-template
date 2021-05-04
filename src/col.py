@@ -9,10 +9,11 @@ train = pd.read_csv('./data/train.csv')
 test = pd.read_csv('./data/test.csv')
 df = pd.concat([train, test])
 
-print('\n')
+print('')
+print('######## col.py ########')
 print('In cols:')
 print(df.columns.values)
-print('\n')
+print('')
 
 # 2
 
